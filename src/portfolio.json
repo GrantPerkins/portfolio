@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Axon",
+    "description": "A TensorFlow-backed web app for retraining COCO trained Mobilenets for use in the FIRST Robotics Competition",
+    "technologies": [
+      "Python",
+      "TensorFlow",
+      "OpenCV",
+      "Docker",
+      "TypeScript",
+      "GraphQL",
+      "React"
+    ]
+  },
+  {
+    "name": "Accurate Centroid-Determining Human Body Detection",
+    "description": "A triple neural network project for detecting the centroid of human body in depth images. Used a sparse auto-encoder, a convolutional neural network, sliding window localization, and a Haar cascade classifier to accomplish this task",
+    "technologies": ["Python", "TensorFlow", "MatPlotLib", "OpenCV"]
+  }
+]
