@@ -3,7 +3,7 @@
     "name": "Axon",
     "link": "https://docs.wpilib.org/en/latest/docs/software/wpilib-tools/axon/introduction.html",
     "image": "hatchcover.png",
-    "description": "Axon is a TensorFlow-backed web app for retraining COCO trained Mobilenets for use in the FIRST Robotics Competition. Axon provides a friendly interface for creating datasets, training models with live metrics, and inferencing TFLite models. There is a Docker backend written in Docker, which runs various TensorFlow 1.12 processes. To trigger the Docker containers to run, there is a TypeScript server. Finally, a React frontend written in TypeScript communicates to the server using GraphQL.",
+    "description": "Axon is a TensorFlow-backed web app for retraining COCO trained Mobilenets for use in the FIRST Robotics Competition. Axon provides a friendly interface for creating datasets, training models with live metrics, and inferencing TFLite models. There is a Docker backend that runs various TensorFlow 1.12 processes. To trigger the Docker containers to run, there is a TypeScript server. Finally, a React frontend written in TypeScript communicates to the server using GraphQL.",
     "technologies": [
       "Python",
       "TensorFlow",
@@ -17,9 +17,9 @@
   {
     "name": "Distributed Computing Systems Class Final Project",
     "link": "https://github.com/GrantPerkins/portfolio/blob/master/src/data/mnist.ipynb",
-    "image": "mnist.png",
-    "description": "For my final project of WPI's Distributed Computing Systems class, I developed a distributed machine learning MNIST classification solution with TensorFlow and AWS SageMaker. The MNIST dataset is split between all of the worker computers. A custom Python program was run across these workers. Each worker had a different \"rank\", and this rank was used to determine which slice of the dataset the worker should use. The lead worker printed metrics every 50 epochs. My Python script trained a custom convolutional neural network, calculating loss using cross entropy across all workers. The lead worker utilized an Adam Optimizer.",
-    "technologies": ["Python", "TensorFlow", "AWS Lambda", "AWS S3"]
+    "image": "sagemaker.jpg",
+    "description": "For my final project of WPI's Distributed Computing Systems class, I developed a distributed machine learning MNIST classification solution with TensorFlow and AWS SageMaker. The MNIST dataset is split between all of the worker computers. A custom Python program was run across these workers. Each worker had a different \"rank\", and this rank was used to determine which slice of the dataset the worker should use. The lead worker printed metrics every 50 epochs. My Python script trained a custom convolutional neural network, calculating loss using cross entropy across all workers. The lead worker ran the optimizer",
+    "technologies": ["Python", "TensorFlow", "AWS SageMaker", "AWS S3"]
   },
   {
     "name": "Accurate Centroid-Determining Human Body Detection",
