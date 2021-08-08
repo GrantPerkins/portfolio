@@ -51,7 +51,10 @@ function PortfolioElement(props: PortfolioElementProps) {
         />
         <CardMedia
           className={classes.media}
-          image={"../../data/images/" + props.image}
+          image={
+            "https://raw.githubusercontent.com/GrantPerkins/portfolio/master/src/data/images/" +
+            props.image
+          }
           title="image for project"
         />
         <Typography variant={"body1"}>{props.description}</Typography>

@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     paddingTop: "10%",
+    width: 120,
   },
 }));
 function Contact() {
