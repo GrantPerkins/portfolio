@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
   portfolio: {
     float: "left",
-    width: "calc(100% - 140px)",
+    width: "calc(100% - 142px)",
   },
   contact: {
     float: "right",
