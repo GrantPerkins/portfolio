@@ -5,7 +5,7 @@ import {
   ThemeProvider,
 } from "@material-ui/core/styles";
 import Portfolio from "../portfolio/Portfolio";
-import { CssBaseline, Typography, Grid } from "@material-ui/core";
+import { CssBaseline, Typography } from "@material-ui/core";
 import Contact from "../contact/Contact";
 
 const theme = createTheme({
