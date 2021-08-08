@@ -15,10 +15,10 @@
     ]
   },
   {
-    "name": "CS 4513 Final Project",
+    "name": "Distributed Computing Systems Class Final Project",
     "link": "https://github.com/GrantPerkins/portfolio/blob/master/src/data/mnist.ipynb",
     "image": "mnist.png",
-    "description": "For my final project of WPI's CS 4513 class, I developed a distributed machine learning solution with TensorFlow and AWS SageMaker. The MNIST dataset is split between all of the worker computers. A custom Python program was run across these workers. Each worker had a different \"rank\", and this rank was used to determine which slice of the dataset the worker should use. The lead worker printed metrics every 50 epochs. My Python script trained a custom convolutional neural network, calculating loss using cross entropy across all workers. The master then utilized an Adam Optimizer.",
+    "description": "For my final project of WPI's Distributed Computing Systems class, I developed a distributed machine learning MNIST classification solution with TensorFlow and AWS SageMaker. The MNIST dataset is split between all of the worker computers. A custom Python program was run across these workers. Each worker had a different \"rank\", and this rank was used to determine which slice of the dataset the worker should use. The lead worker printed metrics every 50 epochs. My Python script trained a custom convolutional neural network, calculating loss using cross entropy across all workers. The lead worker utilized an Adam Optimizer.",
     "technologies": ["Python", "TensorFlow", "AWS Lambda", "AWS S3"]
   },
   {
