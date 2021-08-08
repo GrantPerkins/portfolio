@@ -25,57 +25,64 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     textAlign: "center",
   },
+  fixed: {
+    position: "fixed",
+  },
 }));
 function Contact() {
   const classes = useStyles();
   return (
-    <Card className={classes.card}>
-      <Grid
-        container
-        spacing={2}
-        direction={"column"}
-        justifyContent={"center"}
-        alignItems={"center"}
-      >
-        <Grid item>
-          <Tooltip title={"Me"}>
-            <img src={pfp} alt={"me"} className={classes.image} />
-          </Tooltip>
+    <div className={classes.fixed}>
+      <Card className={classes.card}>
+        <Grid
+          container
+          spacing={2}
+          direction={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
+          <Grid item>
+            <Tooltip title={"Me"}>
+              <img src={pfp} alt={"me"} className={classes.image} />
+            </Tooltip>
+          </Grid>
+          <Grid item>
+            <Tooltip title={"GitHub"}>
+              <IconButton href={"https://github.com/GrantPerkins"}>
+                <GitHub className={classes.largeIcon} />
+              </IconButton>
+            </Tooltip>
+          </Grid>
+          <Grid item>
+            <Tooltip title={"LinkedIn"}>
+              <IconButton
+                href={"https://www.linkedin.com/in/grant-perkins-35ba00170/"}
+              >
+                <LinkedIn className={classes.largeIcon} />
+              </IconButton>
+            </Tooltip>
+          </Grid>
+          <Grid item>
+            <Tooltip title={"Email"}>
+              <IconButton href={"mailto:gcperkins@wpi.edu"}>
+                <Email className={classes.largeIcon} />
+              </IconButton>
+            </Tooltip>
+          </Grid>
+          <Grid item>
+            <Tooltip title={"YouTube"}>
+              <IconButton
+                href={
+                  "https://www.youtube.com/channel/UCbBPHIVcsizYd1IPcwIbL5g"
+                }
+              >
+                <YouTube className={classes.largeIcon} />
+              </IconButton>
+            </Tooltip>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Tooltip title={"GitHub"}>
-            <IconButton href={"https://github.com/GrantPerkins"}>
-              <GitHub className={classes.largeIcon} />
-            </IconButton>
-          </Tooltip>
-        </Grid>
-        <Grid item>
-          <Tooltip title={"LinkedIn"}>
-            <IconButton
-              href={"https://www.linkedin.com/in/grant-perkins-35ba00170/"}
-            >
-              <LinkedIn className={classes.largeIcon} />
-            </IconButton>
-          </Tooltip>
-        </Grid>
-        <Grid item>
-          <Tooltip title={"Email"}>
-            <IconButton href={"mailto:gcperkins@wpi.edu"}>
-              <Email className={classes.largeIcon} />
-            </IconButton>
-          </Tooltip>
-        </Grid>
-        <Grid item>
-          <Tooltip title={"YouTube"}>
-            <IconButton
-              href={"https://www.youtube.com/channel/UCbBPHIVcsizYd1IPcwIbL5g"}
-            >
-              <YouTube className={classes.largeIcon} />
-            </IconButton>
-          </Tooltip>
-        </Grid>
-      </Grid>
-    </Card>
+      </Card>
+    </div>
   );
 }
 
