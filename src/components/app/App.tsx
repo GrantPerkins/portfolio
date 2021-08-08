@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     display: "inline-flex",
     justifyContent: "center",
     width: "100%",
-    paddingBottom: 17
+    paddingBottom: 17,
   },
   portfolio: {
     float: "left",
