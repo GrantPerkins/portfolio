@@ -38,7 +38,9 @@ function Contact() {
         alignItems={"center"}
       >
         <Grid item>
-          <img src={pfp} alt={"me"} className={classes.image} />
+          <Tooltip title={"Me"}>
+            <img src={pfp} alt={"me"} className={classes.image} />
+          </Tooltip>
         </Grid>
         <Grid item>
           <Tooltip title={"GitHub"}>
