@@ -29,34 +29,40 @@ function Portfolio(): ReactElement {
   return (
     <div>
       <Grid container spacing={3}>
-        {left.map((index) => {
-          const value = portfolio[index];
-          return (
-            <PortfolioElement
-              key={index}
-              name={value.name}
-              link={value.link}
-              image={value.image}
-              description={value.description}
-              technologies={value.technologies}
-            />
-          );
-        })}
-      </Grid>
-      <Grid container spacing={3}>
-        {right.map((index) => {
-          const value = portfolio[index];
-          return (
-            <PortfolioElement
-              key={index}
-              name={value.name}
-              link={value.link}
-              image={value.image}
-              description={value.description}
-              technologies={value.technologies}
-            />
-          );
-        })}
+        <Grid item xs={6}>
+          <Grid container spacing={3}>
+            {left.map((index) => {
+              const value = portfolio[index];
+              return (
+                <PortfolioElement
+                  key={index}
+                  name={value.name}
+                  link={value.link}
+                  image={value.image}
+                  description={value.description}
+                  technologies={value.technologies}
+                />
+              );
+            })}
+          </Grid>
+        </Grid>
+        <Grid item xs={6}>
+          <Grid container spacing={3}>
+            {right.map((index) => {
+              const value = portfolio[index];
+              return (
+                <PortfolioElement
+                  key={index}
+                  name={value.name}
+                  link={value.link}
+                  image={value.image}
+                  description={value.description}
+                  technologies={value.technologies}
+                />
+              );
+            })}
+          </Grid>
+        </Grid>
       </Grid>
     </div>
   );

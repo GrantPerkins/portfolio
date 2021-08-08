@@ -36,7 +36,7 @@ type PortfolioElementProps = {
 function PortfolioElement(props: PortfolioElementProps) {
   const classes = useStyles();
   return (
-    <Grid item xs={6}>
+    <Grid item xs={12}>
       <Card className={classes.element}>
         <a href={props.link} className={classes.title}>
           <CardHeader

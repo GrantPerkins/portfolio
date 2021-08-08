@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     display: "inline-flex",
-    textAlign: "center",
+    justifyContent: "center",
     width: "100%",
   },
   portfolio: {
