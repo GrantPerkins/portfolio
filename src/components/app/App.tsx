@@ -52,7 +52,7 @@ function App() {
         <CssBaseline />
         <Typography
           className={classes.title}
-          variant={"h1"}
+          variant={"h2"}
           color={"secondary"}
         >
           Grant Perkins' Portfolio
