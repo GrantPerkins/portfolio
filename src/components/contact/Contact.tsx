@@ -2,11 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Card,
-  CardContent,
   Grid,
   IconButton,
   Tooltip,
-  Typography,
 } from "@material-ui/core";
 import { Email, GitHub, LinkedIn, YouTube } from "@material-ui/icons";
 import pfp from "./pfp.jpg";
