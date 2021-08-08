@@ -69,17 +69,6 @@ function Contact() {
               </IconButton>
             </Tooltip>
           </Grid>
-          <Grid item>
-            <Tooltip title={"YouTube"}>
-              <IconButton
-                href={
-                  "https://www.youtube.com/channel/UCbBPHIVcsizYd1IPcwIbL5g"
-                }
-              >
-                <YouTube className={classes.largeIcon} />
-              </IconButton>
-            </Tooltip>
-          </Grid>
         </Grid>
       </Card>
     </div>
