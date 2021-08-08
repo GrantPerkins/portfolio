@@ -7,7 +7,7 @@ import { Grid } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({}));
 
 function Portfolio(): ReactElement {
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
     <Grid container spacing={3}>
       {portfolio.map((value) => {
