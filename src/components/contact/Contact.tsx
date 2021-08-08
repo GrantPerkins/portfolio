@@ -1,11 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  Card,
-  Grid,
-  IconButton,
-  Tooltip,
-} from "@material-ui/core";
+import { Card, Grid, IconButton, Tooltip } from "@material-ui/core";
 import { Email, GitHub, LinkedIn, YouTube } from "@material-ui/icons";
 import pfp from "./pfp.jpg";
 
@@ -27,6 +22,8 @@ const useStyles = makeStyles((theme) => ({
   card: {
     paddingTop: "10%",
     width: 120,
+    display: "flex",
+    textAlign: "center",
   },
 }));
 function Contact() {

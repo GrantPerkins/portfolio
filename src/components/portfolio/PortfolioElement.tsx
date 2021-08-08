@@ -38,23 +38,23 @@ function PortfolioElement(props: PortfolioElementProps) {
   return (
     <Grid item xs={6}>
       <Card className={classes.element}>
-        <CardHeader
-          title={
-            <a href={props.link} className={classes.title}>
+        <a href={props.link} className={classes.title}>
+          <CardHeader
+            title={
               <Typography variant={"h4"} color={"primary"}>
                 {props.name}
               </Typography>
-            </a>
-          }
-        />
-        <CardMedia
-          className={classes.media}
-          image={
-            "https://raw.githubusercontent.com/GrantPerkins/portfolio/master/src/data/images/" +
-            props.image
-          }
-          title="image for project"
-        />
+            }
+          />
+          <CardMedia
+            className={classes.media}
+            image={
+              "https://raw.githubusercontent.com/GrantPerkins/portfolio/master/src/data/images/" +
+              props.image
+            }
+            title="image for project"
+          />
+        </a>
         <Typography variant={"body1"}>{props.description}</Typography>
         <Typography variant={"h5"}>Technologies</Typography>
         <Grid container>

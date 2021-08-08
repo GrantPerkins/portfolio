@@ -33,6 +33,14 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     width: "100%",
   },
+  portfolio: {
+    float: "left",
+    width: "calc(100% - 140px)",
+  },
+  contact: {
+    float: "right",
+    width: 120,
+  },
 }));
 
 function App() {
@@ -49,14 +57,14 @@ function App() {
         >
           Grant Perkins' Portfolio
         </Typography>
-        <Grid container spacing={3}>
-          <Grid item xs={10}>
+        <div style={{ width: "100%" }}>
+          <div className={classes.portfolio}>
             <Portfolio />
-          </Grid>
-          <Grid item xs={2}>
-            <Contact />
-          </Grid>
-        </Grid>
+          </div>
+        </div>
+        <div className={classes.contact}>
+          <Contact />
+        </div>
       </div>
     </ThemeProvider>
   );
