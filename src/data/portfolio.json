@@ -23,10 +23,17 @@
   },
   {
     "name": "Distributed Computing Systems Class Final Project",
-    "link": "https://github.com/GrantPerkins/portfolio/blob/master/src/data/mnist.ipynb",
+    "link": "https://github.com/GrantPerkins/CS4513FinalProject/blob/master/output.ipynb",
     "image": "sagemaker.jpg",
     "description": "For my final project of WPI's Distributed Computing Systems class, I developed a distributed machine learning MNIST classification solution with TensorFlow and AWS SageMaker. The MNIST dataset is split between all of the worker computers. A custom Python program was run across these workers. Each worker had a different \"rank\", and this rank was used to determine which slice of the dataset the worker should use. The lead worker printed metrics every 50 epochs. My Python script trained a custom convolutional neural network, calculating loss using cross entropy across all workers. The lead worker ran the optimizer",
     "technologies": ["Python", "TensorFlow", "AWS SageMaker", "AWS S3"]
+  },
+  {
+    "name": "RattleSnake",
+    "link": "https://github.com/GrantPerkins/RattleSnake",
+    "image": "rs.png",
+    "description": "I developed my own compiled language called RattleSnake. While rudimentary, RattleSnake has a fully-functional lexer, parser, and assembly code generator for the NASM assembler. By running as an executable instead of an interpreted script, RattleSnake runs substantially faster than Python, from which the style of the language is based. RattleSnake also has clearer scope definitions than Python, and a main function. RattleSnake can currently do all basic math operations (+, -, *, /).",
+    "technologies": ["x86 Assembly", "Python", "NASM"]
   },
   {
     "name": "Accurate Centroid-Determining Human Body Detection",
