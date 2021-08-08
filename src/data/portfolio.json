@@ -16,7 +16,7 @@
   },
   {
     "name": "GRIP",
-    "link": "https://github.com/WPIRoboticsProjects/GRIP/wiki",
+    "link": "https://docs.wpilib.org/en/stable/docs/software/vision-processing/grip/introduction-to-grip.html",
     "image": "grip.png",
     "description": "While working at WPILib, I maintained GRIP, the Graphically Represented Image Processing engine. It provides an easy-to-use GUI to develop OpenCV vision pipelines, as well as generate code in Python, C++, and Java. GRIP uses a drag-and-drop interface to implement all base OpenCV functions, such as erode, resize, and contour detection. This tool is used by thousands of high school students every year, and is one of WPILib's most popular tools.",
     "technologies": [
