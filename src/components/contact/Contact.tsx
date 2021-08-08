@@ -49,7 +49,7 @@ function Contact() {
           <Grid item>
             <Tooltip title={"GitHub"}>
               <IconButton href={"https://github.com/GrantPerkins"}>
-                <GitHub className={classes.largeIcon} />
+                <GitHub className={classes.largeIcon} color={"primary"} />
               </IconButton>
             </Tooltip>
           </Grid>
@@ -58,14 +58,14 @@ function Contact() {
               <IconButton
                 href={"https://www.linkedin.com/in/grant-perkins-35ba00170/"}
               >
-                <LinkedIn className={classes.largeIcon} />
+                <LinkedIn className={classes.largeIcon} color={"primary"} />
               </IconButton>
             </Tooltip>
           </Grid>
           <Grid item>
             <Tooltip title={"Email"}>
               <IconButton href={"mailto:gcperkins@wpi.edu"}>
-                <Email className={classes.largeIcon} />
+                <Email className={classes.largeIcon} color={"primary"} />
               </IconButton>
             </Tooltip>
           </Grid>
