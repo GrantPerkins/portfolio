@@ -1,0 +1,80 @@
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import {
+  Card,
+  CardHeader,
+  CardMedia,
+  Grid,
+  List,
+  ListItem,
+  Typography,
+} from "@material-ui/core";
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
+
+const useStyles = makeStyles((theme) => ({
+  element: {
+    padding: 3,
+  },
+  bullet: {
+    height: 5,
+    paddingBottom: 1,
+  },
+  title: {
+    textDecoration: "underline",
+  },
+  media: {
+    height: 0,
+    paddingTop: "56.25%",
+  },
+}));
+type PortfolioElementProps = {
+  name: string;
+  link: string;
+  image: string;
+  description: string;
+  technologies: string[];
+};
+
+function PortfolioElement(props: PortfolioElementProps) {
+  const classes = useStyles();
+  return (
+    <Grid item xs={6}>
+      <Card className={classes.element}>
+        <CardHeader
+          title={
+            <a href={props.link} className={classes.title}>
+              <Typography variant={"h4"} color={"primary"}>
+                {props.name}
+              </Typography>
+            </a>
+          }
+        />
+        <CardMedia
+          className={classes.media}
+          image={"../../data/images/" + props.image}
+          title="image for project"
+        />
+        <Typography variant={"body1"}>{props.description}</Typography>
+        <Typography variant={"h5"}>Technologies</Typography>
+        <Grid container>
+          {props.technologies.map((value) => {
+            return (
+              <Grid item xs={6}>
+                <Grid container>
+                  <Grid item xs={2}>
+                    <FiberManualRecordIcon className={classes.bullet} />
+                  </Grid>
+                  <Grid item xs={10}>
+                    <Typography variant={"body2"}>{value}</Typography>
+                  </Grid>
+                </Grid>
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Card>
+    </Grid>
+  );
+}
+
+export default PortfolioElement;

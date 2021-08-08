@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Axon",
+    "link": "https://docs.wpilib.org/en/latest/docs/software/wpilib-tools/axon/introduction.html",
+    "image": "hatchcover.png",
+    "description": "A TensorFlow-backed web app for retraining COCO trained Mobilenets for use in the FIRST Robotics Competition.",
+    "technologies": [
+      "Python",
+      "TensorFlow",
+      "OpenCV",
+      "Docker",
+      "TypeScript",
+      "GraphQL",
+      "React"
+    ]
+  },
+  {
+    "name": "Accurate Centroid-Determining Human Body Detection",
+    "link": "https://drive.google.com/file/d/1XcTCKMBJ2OyixukSnBX50-Wzj0SVDF7a/view?usp=sharing",
+    "image": "centroid.png",
+    "description": "A triple neural network project for detecting the centroid of human body in depth images. Used a sparse auto-encoder, a convolutional neural network, sliding window localization, and a Haar cascade classifier to accomplish this task.",
+    "technologies": ["Python", "TensorFlow", "MatPlotLib", "OpenCV"]
+  }
+]
